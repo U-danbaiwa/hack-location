@@ -1,7 +1,7 @@
 import requests
 import os
 import sys
-print("os.system.clear)
+print("os.system.clear")
 print("
 █████████████████████████████████████████████████████
 █▒▒▒▒▒▒██▒▒▒▒▒▒████████▒▒▒▒▒▒▒▒▒▒▒▒███▒▒▒▒▒▒▒▒▒▒▒▒▒▒█
