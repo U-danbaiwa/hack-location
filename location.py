@@ -1,6 +1,20 @@
-import requests, json
-me=input("enter your ip: ")
-response = requests.get("https://ipgeolocation.abstractapi.com/v1/?api_key=5df4ea3f9fbc4850b6fbc3fcdb19cf04&ip_address=",me).json()
-#print(response.status_code)
-print(response.city)
-print(response.city_geoname_id)
+import re
+import json
+from urllib2 import urlopen
+Me=input("enter ip: ")
+url = 'http://ipinfo.io/json'
+response = urlopen(url+Me)
+data = json.load(response)
+
+IP=(data['ip'])
+org=(data['org'])
+city =(data['city'])
+country=(data['country'])
+region=(data['region'])
+
+print('Your IP detail')
+print(IP)
+print(org)
+print(city)
+print(country)
+print(region)
