@@ -1,7 +1,7 @@
 #import argparse
 import requests, json
 import sys
-from sys import
+from sys import argv
 import os
 ip=input("enter ip: ")
 response = requests.get("https://ipgeolocation.abstractapi.com/v1/?api_key=5df4ea3f9fbc4850b6fbc3fcdb19cf04&ip_adress=",ip).json()sys.stdout.flush()
