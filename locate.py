@@ -1,12 +1,16 @@
-import json
 import requests
+import json
 
-# Your API key, available from your account page
-YOUR_GEOLOCATION_KEY = "https://ipgeolocation.abstractapi.com/v1/?api_key=5df4ea3f9fbc4850b6fbc3fcdb19cf04&ip_address=197.210.63.102"
+# IP address to test
+ip_address =input("Enter ip")
 
-# IP addretest
-ip_address =input("Enter ip: ")
-
-request_url = 'https://ipgeolocation.abstractapi.com/v1/?api_key=' + YOUR_GEOLOCATION_KEY + '&ip_address=' + ip_address
-result = json.loads(response.content)
+# URL to send the request to
+request_url = 'https://geolocation-db.com/jsonp/' + ip_address
+# Send request and decode the result
+response = requests.get(request_url)
+result = response.content.decode()
+# Clean the returned string so it just contains the dictionary data for the IP address
+result = result.split("(")[1].strip(")")
+# Convert this data into a dictionary
+result  = json.loads(result)
 print(result)
