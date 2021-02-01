@@ -1,20 +1,41 @@
-import re
-import json
-from urllib2 import urlopen
-Me=input("enter ip: ")
-url = 'http://ipinfo.io/json'
-response = urlopen(url+Me)
-data = json.load(response)
+#coded by N17RO (noob hackers)
 
-IP=(data['ip'])
-org=(data['org'])
-city =(data['city'])
-country=(data['country'])
-region=(data['region'])
+#modules required
+import argparse
+import requests, json
+import sys
+from sys import argv
+import os
 
-print('Your IP detail')
-print(IP)
-print(org)
-print(city)
-print(country)
-print(region)
+#arguments and parser
+
+
+
+
+ip =input("Enter Ip: ")
+
+api = "http://ip-api.com/json/"
+
+try:
+        data = requests.get(api+ip).json()
+        sys.stdout.flush()
+        a = lgreen+bold+"[$]"
+        b = cyan+bold+"[$]"
+        print (a, "[Victim]:", data['query'])
+        print(red+"<--------------->"+red)
+        print (b, "[ISP]:", data['isp'])
+        print(red+"<--------------->"+red)
+        print (a, "[Organisation]:", data['org'])
+        print(red+"<--------------->"+red)
+        print (b, "[City]:", data['city'])
+        print(red+"<--------------->"+red)
+        print (a, "[Region]:", data['region'])
+        print(red+"<--------------->"+red)
+        print (b, "[Longitude]:", data['lon'])
+        print(red+"<--------------->"+red)
+        print (a, "[Latitude]:", data['lat'])
+        print(red+"<--------------->"+red)
+        print (b, "[Time zone]:", data['timezone'])
+        print(red+"<--------------->"+red)
+        print (a, "[Zip code]:", data['zip'])
+        print (" "+yellow)
