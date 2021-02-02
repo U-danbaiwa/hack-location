@@ -65,7 +65,7 @@ for i in range(90):
 		print("")
 		print(red+"[ * ] Victim Messega<=====>",["message"])
 		print("")
-		print(red"\n\n\t\t\tSHARE AND FOLLOW US FOR MORE TOOLS")
+		print(red+"\n\n\t\t\tSHARE AND FOLLOW US FOR MORE TOOLS")
 	elif com=="2":
 	       os.system("clear")
 	       os.system("figlet U-danbaiwa")
