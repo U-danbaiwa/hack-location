@@ -53,8 +53,6 @@ for i in range(90):
 		print("")
 		print(red+"[ * ] Victim TimeZone:<=====>",re["timezone"])
 		print("")
-		#print(green+"[ * ] Victim Currency:<=====>",re["currency"])
-		print("")
 		print(cyan+"[ * ] Victim Isp:<=====>",re["isp"])
 		print("")
 		print(cy+"[ * ] Victim Org:<=====>",re["org"])
@@ -65,7 +63,7 @@ for i in range(90):
 		print("")
 		print(red+"[ * ] Victim Messega<=====>",["message"])
 		print("")
-		print(red+"\n\n\t\t\tSHARE AND FOLLOW US FOR MORE TOOLS")
+		print(red+"\n\n\tSHARE AND FOLLOW US FOR MORE TOOLS")
 	elif com=="2":
 	       os.system("clear")
 	       os.system("figlet U-danbaiwa")
