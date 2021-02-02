@@ -32,7 +32,7 @@ for i in range(90):
 		re=requests.get(response+ip).json()
 		print("")
 		print("")
-		print(yellow+bold+"**********************VICTIM INFORMATION********************")
+		print(yellow+bold+"**********************VICTIM INFORMATION*******************")
 		print(red+"[ * ] Victim ip:<=====>",re["query"])
 		print("")
 		print(cyan+"[ * ] Status Code:<=====>",re["status"])
