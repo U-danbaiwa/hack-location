@@ -47,7 +47,7 @@ for i in range(90):
 		print("")
 		print(cy+"[ * ] Victim City:<=====>",re["city"])
 		print("")
-		print(green+"[ * ] Latitude:<=====>"+re["Lat"])
+		print(green+"[ * ] Latitude:<=====>",re["Lat"])
 		print("")
 		print(cy+"[ * ] Longitude:<=====>",re["lon"])
 		print("")
