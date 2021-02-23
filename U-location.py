@@ -89,7 +89,7 @@ for i in range(90):
 		  print(red+"\n\n\tSHARE AND FOLLOW US FOR MORE TOOLS")
 		  print("")
 		except KeyError:
-		  peb=("\t\tIP ADDRESS NOT FOUND!!!")
+		  peb=("\tIP ADDRESS NOT FOUND!!!")
 		  print(yellow+bold+" ".join(peb))
 	elif com=="2":
 	       os.system("clear")
@@ -107,6 +107,8 @@ for i in range(90):
 	       print("\n")
 	       print(red+"\t=====COMPLETE INSTALL THANK YOU=====")
 	elif com=="3":
+	  print("please wait...")
+	  time.sleep(5)
 	  exit()
 	else:
 		print("invalid command!")
