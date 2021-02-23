@@ -24,7 +24,7 @@ for i in range(90):
 	com=input("Enter Choice: ")
 	if com=="1":
 	  os.system("clear")
-		os.system("figlet IP-INFO...")
+	  os.system("figlet IP-INFO...")
 	 	print(green+"\t\t\tv 1.1.0")
 	 	print(cya+"\t\t   coded By U-danbaiwa")
   	print("")
