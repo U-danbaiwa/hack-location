@@ -23,14 +23,15 @@ print("")
 for i in range(90):
 	com=input("Enter Choice: ")
 	if com=="1":
-		os.system("clear")
-		os.system("figlet IP-INFO...")
-		print(green+"\t\t\tv 1.1.0")
-		print(cya+"\t\t   coded By U-danbaiwa")
-		print("")
-		print("")
-		ip=input(green+bold+"[*] Enter Victim Ip:  ")
-		try:
+	  try:
+		  os.system("clear")
+		  os.system("figlet IP-INFO...")
+	  	print(green+"\t\t\tv 1.1.0")
+	  	print(cya+"\t\t   coded By U-danbaiwa")
+  		print("")
+		  print("")
+	  	ip=input(green+bold+"[*] Enter Victim Ip:  ")
+		
 		  response ="http://ip-api.com/json/"
 	  	re=requests.get(response+ip).json()
 		  print("")
@@ -85,9 +86,9 @@ for i in range(90):
 	  	print("")
 		  print(red+"\n\n\tSHARE AND FOLLOW US FOR MORE TOOLS")
 		  print("")
-		except Exception:
-		  DB=("WRONG IP ADDRESS")
-		  print(green+bold" ".join(DB))
+	except Exception:
+		DB=("WRONG IP ADDRESS")
+		print(green+bold" ".join(DB))
 	elif com=="2":
 	       os.system("clear")
 	       os.system("figlet U-danbaiwa")
