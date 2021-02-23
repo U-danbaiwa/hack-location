@@ -16,9 +16,10 @@ os.system("clear")
 os.system("figlet U-danbaiwa")
 print(cy+"\t\t\tv 1.1.0")
 print("")
-print("[1]IP INFORMATION")
+print(yellow+bold+"[1] IP INFORMATION")
 print("")
-print("[2]UPDATE TOOL")
+print(green+bold+"[2] UPDATE TOOL")
+print(cyan+bold+"[3] Exit")
 print("")
 for i in range(90):
 	com=input("Enter Choice: ")
@@ -88,7 +89,8 @@ for i in range(90):
 		  print(red+"\n\n\tSHARE AND FOLLOW US FOR MORE TOOLS")
 		  print("")
 		except KeyError:
-		  print("IP NOT FOUND")
+		  peb=("\t\t\tIP ADDRESS NOT FOUND!!!")
+		  print(yellow+bold+" ".join(peb))
 	elif com=="2":
 	       os.system("clear")
 	       os.system("figlet U-danbaiwa")
@@ -104,5 +106,7 @@ for i in range(90):
 	       os.system("cd /data/data/com.termux/files/home")
 	       print("\n")
 	       print(red+"\t=====COMPLETE INSTALL THANK YOU=====")
+	elif com=="3":
+	  os.system.exit()
 	else:
 		print("invalid command!")
