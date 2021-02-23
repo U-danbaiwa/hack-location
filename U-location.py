@@ -19,6 +19,7 @@ print("")
 print(yellow+bold+"[1] IP INFORMATION")
 print("")
 print(green+bold+"[2] UPDATE TOOL")
+print("")
 print(cyan+bold+"[3] Exit")
 print("")
 for i in range(90):
@@ -91,6 +92,7 @@ for i in range(90):
 		except KeyError:
 		  peb=("\tIP ADDRESS NOT FOUND!!!")
 		  print(yellow+bold+" ".join(peb))
+		  print("\n")
 	elif com=="2":
 	       os.system("clear")
 	       os.system("figlet U-danbaiwa")
