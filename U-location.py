@@ -30,8 +30,9 @@ for i in range(90):
 		print("")
 		print("")
 		response ="http://ip-api.com/json/"
-		re=requests.get(response+ip).json()
+		#re=requests.get(response+ip).json()
 		ip=input(green+bold+"[*] Enter Victim Ip:  ")
+		re=requests.get(response+ip).json()
 		
 		print("")
 		print("")
